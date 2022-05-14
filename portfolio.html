@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>WacKonsole</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/jquery.terminal@2.x.x/js/jquery.terminal.min.js"></script>
 <script src="scripts.js"></script>
@@ -39,6 +39,11 @@
             },
             contact: function() {
                 this.echo('[[!;;;;nicklem64@gmail.com]Email Me]');
+            },
+            river: function() {
+                $('.terminal').css('text-shadow', '0 0.2rem 1rem #7b0c0c');
+                $('.terminal').css('--color', 'red');
+                $('.terminal').css('--font', 'VT323')
             }
 
         },
