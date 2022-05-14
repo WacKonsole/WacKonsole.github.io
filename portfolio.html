@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WacKonsole</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/jquery.terminal@2.x.x/js/jquery.terminal.min.js"></script>
+<script src="scripts.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+
+</head>
+<body>
+    
+    
+    <script>
+        $('body').terminal({
+            hello: function(what) {
+                this.echo('Hello, ' + what +
+                          '. Welcome to this terminal.');
+            },
+            whoami: function() {
+                this.echo('My name is Nicolas Lemaire, I am currently ' + currentAge + ' and I\'m certified in Adobe Photoshop, working to get my PCEP, MS-900, and CompTIA+ certifications\nI have worked in a bagger position at Winn-Dixie when I was 15 for my first job. My goals are to become either a Cybersecurity Specialist or a Full-Stack Web Developer');
+            },
+            projects: function() {
+                this.echo('My Python Repository for extracting breach info like emails and passwords from a specifically formatted txt file using RegEx:\nhttps://github.com/d4r14h/unsheathe\n\nThe SHS Coding Club Website I created:\nhttps://1scfz.github.io');
+            },
+            reload: function() {
+                window.location.reload();
+            },
+            spiel: function() {
+                this.echo('My name is Nicolas Lemaire, I am currently ' + currentAge + ' and I\'m certified in Adobe Photoshop, working to get my PCEP, MS-900, and CompTIA+ certifications\nI have worked in a bagger position at Winn-Dixie when I was 15 for my first job. My goals are to become either a Cybersecurity Specialist or a Full-Stack Web Developer');
+                this.echo('\n');
+                this.echo('My Python Repository for extracting breach info like emails and passwords from a specifically formatted txt file using RegEx:\nhttps://github.com/d4r14h/unsheathe\n\nThe SHS Coding Club Website I created:\nhttps://1scfz.github.io');
+            },
+            help: function() {
+                this.echo('Commands are case sensitive! (All of them are lowercase).\n\nList of available commands:\n\nhelp\thello\twhoami\tprojects\tspiel\treload\tclear\n\n')
+            }
+        },
+            {
+            greetings: (` _       __           __ __                       __   
+| |     / /___ ______/ //_/___  ____  _________  / /__ 
+| | /| / / __ \`/ ___/ ,< / __ \\/ __ \\/ ___/ __ \\/ / _ \\
+| |/ |/ / /_/ / /__/ /| / /_/ / / / (__  ) /_/ / /  __/
+|__/|__/\\__,_/\\___/_/ |_\\____/_/ /_/____/\\____/_/\\___/ \n\nTry typing \'help\' for a list of all available commands\n`)
+        });
+        </script>
+        <div class="flicker"></div>
+        <div class="scanlines"></div>
+        
+</body>
+</html>
