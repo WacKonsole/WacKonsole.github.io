@@ -4,3 +4,7 @@
 
 
 I used jQuery and jQuery Terminal library
+
+
+
+The site is live [https://wackonsole.github.io/portfolio.html](here)
