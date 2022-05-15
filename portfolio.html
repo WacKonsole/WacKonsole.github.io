@@ -45,12 +45,18 @@
                 $('.terminal').css('--color', 'red');
                 $('.terminal').css('--font', 'VT323')
             },
-            pic: function() {
+            pics: function() {
                 const img = $('<img src=\'confooznick.jpeg\' width=\'500\' height=\'500\'>');
                 img.on('load', this.resume);
                 this.pause();
                 this.echo(img);
-            }
+
+                const img2 = $('<img src=\'nickhorn.png\' width=\'500\' height=\'500\'>');
+                img2.on('load', this.resume);
+                this.pause();
+                this.echo(img2);
+            },
+
 
         },
             {
