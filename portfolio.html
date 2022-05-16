@@ -64,7 +64,11 @@
                 this.pause();
                 this.echo(img2);
             },
-        }
+            color: function(col) {
+                var colour = col;
+                $('.terminal').css('--color', colour);
+            },
+        },
             {
             greetings: (` _       __           __ __                       __   
 | |     / /___ ______/ //_/___  ____  _________  / /__ 
