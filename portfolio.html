@@ -72,6 +72,13 @@
             color: function(col) {
                 $('.terminal').css('--color', col);
             },
+            adobe: function() {
+                const aCert = $('<img src=\'adobecert.jpg\' width=\'500\' height=\'500\'>');
+                aCert.on('load', this.resume);
+                this.pause();
+                this.echo(aCert);
+            }
+            
 
 
 
