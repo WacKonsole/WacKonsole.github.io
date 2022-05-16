@@ -49,7 +49,7 @@
             river: function() {
                 $('.terminal').css('text-shadow', '0 0.2rem 1rem #7b0c0c');
                 $('.terminal').css('--color', 'red');
-                $('.terminal').css('--font', 'VT323')
+                $('.terminal').css('--font', 'VT323');
             },
             pics: function() {
                 const img = $('<img src=\'confooznick.jpeg\' width=\'500\' height=\'500\'>');
@@ -64,10 +64,15 @@
                 this.pause();
                 this.echo(img2);
             },
-
-
-
-        },
+            color: function(col) {
+                var colour = col
+                $('.terminal').css('--color', colour);
+                
+            }, 
+            backColor: function(backCol) {
+                var backColour = backCol
+                $('.terminal').css('--color', ('0 02rem 1rem ' + backColour);
+            },
             {
             greetings: (` _       __           __ __                       __   
 | |     / /___ ______/ //_/___  ____  _________  / /__ 
