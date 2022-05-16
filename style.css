@@ -109,7 +109,7 @@ body {
 /* glow */
 .terminal {
     text-shadow: 0 0.2rem 1rem #0c7b46;
-    --color: lightgreen;
+    --color: chartreuse;
     --font: 'VT323'
 }
 /* based on
@@ -227,9 +227,6 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
     padding: 10px;
 }
 
-.green {
-    color:chartreuse
-}
 .prompt {
   position: absolute;
   top: 0;
