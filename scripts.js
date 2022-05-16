@@ -31,3 +31,11 @@ function ss_frame(t,a){
     ss_raf(function(){ss_frame(t,a)});
 }
 smoothScroll();
+
+var helpMsg = 'Commands are case sensitive! (All of them are lowercase).\n\nList of available commands:\n\nhelp\thello\twhoami\tprojects\tspiel\treload\tclear\tcontact\tpics\n\n'
+
+function displayHelp() {
+    $('body').terminal({
+        this.echo(helpMsg);
+    }
+}
